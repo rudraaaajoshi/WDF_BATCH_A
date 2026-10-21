@@ -1,0 +1,23 @@
+/* =========================================================
+   PAGE-SPECIFIC: Registration Page
+   ========================================================= */
+
+section {
+    width: 70%;
+    padding: 30px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+form {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Gender Radio Buttons */
+input[type="radio"] {
+    margin: 8px 5px 8px 0;
+    width: auto;
+}

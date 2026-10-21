@@ -1,0 +1,25 @@
+/* =========================================================
+   PAGE-SPECIFIC: About Page
+   ========================================================= */
+
+section p {
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+/* Mission List */
+section ul li {
+    padding-left: 4px;
+}
+
+/* College Facilities Table */
+table caption {
+    text-align: left;
+    font-weight: bold;
+    color: #164579;
+    margin-bottom: 8px;
+}
+
+td {
+    text-align: left;
+}

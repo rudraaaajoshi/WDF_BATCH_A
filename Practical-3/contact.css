@@ -1,0 +1,21 @@
+/* =========================================================
+   PAGE-SPECIFIC: Contact Page
+   ========================================================= */
+
+section {
+    width: 80%;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section p b {
+    color: #164579;
+}
+
+form {
+    width: 90%;
+    margin: 20px auto 0;
+}

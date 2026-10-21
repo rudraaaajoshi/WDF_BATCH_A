@@ -1,0 +1,41 @@
+/* =========================================================
+   PAGE-SPECIFIC: Attendance Page
+   ========================================================= */
+
+section p {
+    font-size: 16px;
+}
+
+td {
+    text-align: center;
+}
+
+/* Attendance Percentage column */
+td:nth-child(4) {
+    font-weight: bold;
+    color: #1e5aa8;
+}
+
+/* Status column */
+td:last-child {
+    font-weight: bold;
+}
+
+td.status-good,
+td:last-child:contains("Good") {
+    color: #1e8449;
+}
+
+/* Fallback: generic status coloring via data attribute if used in HTML */
+td[data-status="good"] { color: #1e8449; }
+td[data-status="warning"] { color: #b9770e; }
+td[data-status="low"] { color: #c0392b; }
+
+/* Summary List */
+ul {
+    font-size: 16px;
+}
+
+li b {
+    color: #1e5aa8;
+}
