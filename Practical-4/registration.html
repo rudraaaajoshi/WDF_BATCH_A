@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Student Registration - StudentHub Portal</title>
+    <link rel="stylesheet" href="registration.css">
+
+
+<link rel="stylesheet" href="script.css">
+</head>
+<body>
+
+  
+   <header>
+
+          <div align="left">
+        <img src="c:\Users\rudra\OneDrive\Pictures\charusat logo.jpg" width="90" height="90">
+    </div>
+
+    <h1 align="center">StudentHub Portal</h1>
+
+    <p align="center">Welcome to Student Information Portal</p>
+
+</header>
+    
+    <hr>
+
+
+    <nav>
+        <a href="home.html">Home</a> 
+        <a href="about.html">About</a> 
+        <a href="login.html">Login</a> 
+        <a href="registration.html">Registration</a> 
+        <a href="profile.html">Profile</a> 
+        <a href="courses.html">Courses</a> 
+        <a href="attendance.html">Attendance</a> 
+        <a href="result.html">Results</a> 
+        <a href="contact.html">Contact</a> 
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <hr>
+
+    <section>
+        <h2>Student Registration Form</h2>
+
+        <form id="regForm">
+
+            <label for="name"><b>Full Name:</b></label><br>
+            <input type="text" id="name" name="name"
+            placeholder="Enter your full name" required><br><br>
+
+            <label for="enrollment"><b>Enrollment Number:</b></label><br>
+            <input type="text" id="enrollment" name="enrollment"
+            placeholder="Enter enrollment number" required><br><br>
+
+            <label for="email"><b>Email Address:</b></label><br>
+            <input type="email" id="email" name="email"
+            placeholder="Enter your email" required><br><br>
+
+            <label for="mobile"><b>Mobile Number:</b></label><br>
+            <input type="tel" id="mobile" name="mobile"
+            placeholder="Enter mobile number" required><br><br>
+
+            <label><b>Gender:</b></label><br>
+
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label>
+
+            <br><br>
+
+            <label for="semester"><b>Semester:</b></label><br>
+
+            <select id="semester" name="semester">
+                <option>Select Semester</option>
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+                <option>Semester 7</option>
+                <option>Semester 8</option>
+            </select>
+
+            <br><br>
+
+            <label for="course"><b>Course:</b></label><br>
+
+            <select id="course" name="course">
+                <option>Select Course</option>
+                <option>BCA</option>
+                <option>B.Tech</option>
+                <option>B.Sc</option>
+                <option>B.Com</option>
+                <option>MCA</option>
+            </select>
+
+            <br><br>
+
+            <label for="address"><b>Address:</b></label><br>
+
+            <textarea id="address"
+            rows="4"
+            cols="40"
+            placeholder="Enter your address"></textarea>
+            <br><span id="charCount">0 characters</span>
+
+            <br><br>
+
+            <label for="password"><b>Password:</b></label><br>
+
+            <input type="password"
+            id="password"
+            name="password"
+            placeholder="Create password"
+            required>
+
+            <br><br>
+
+            <label for="confirm"><b>Confirm Password:</b></label><br>
+
+            <input type="password"
+            id="confirm"
+            name="confirm"
+            placeholder="Confirm password"
+            required>
+
+            <br><br>
+
+            <input type="submit" value="Register">
+
+            <input type="reset" value="Clear">
+
+        </form>
+
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
