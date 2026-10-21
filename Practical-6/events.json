@@ -1,0 +1,108 @@
+
+[
+  {
+    "id": 1,
+    "title": "Web Development Workshop",
+    "category": "Workshop",
+    "date": "2026-11-10",
+    "location": "Computer Lab"
+  },
+  {
+    "id": 2,
+    "title": "Coding Competition",
+    "category": "Competition",
+    "date": "2026-11-12",
+    "location": "Auditorium"
+  },
+  {
+    "id": 3,
+    "title": "Technical Seminar",
+    "category": "Seminar",
+    "date": "2026-11-15",
+    "location": "Seminar Hall"
+  },
+  {
+    "id": 4,
+    "title": "AI Workshop",
+    "category": "Workshop",
+    "date": "2026-11-17",
+    "location": "Lab 2"
+  },
+  {
+    "id": 5,
+    "title": "Hackathon",
+    "category": "Competition",
+    "date": "2026-11-20",
+    "location": "Main Hall"
+  },
+  {
+    "id": 6,
+    "title": "Cybersecurity Talk",
+    "category": "Seminar",
+    "date": "2026-11-22",
+    "location": "Room 101"
+  },
+  {
+    "id": 7,
+    "title": "Java Training",
+    "category": "Workshop",
+    "date": "2026-11-24",
+    "location": "Computer Lab"
+  },
+  {
+    "id": 8,
+    "title": "Code Quiz",
+    "category": "Competition",
+    "date": "2026-11-26",
+    "location": "Room 102"
+  },
+  {
+    "id": 9,
+    "title": "Cloud Computing Seminar",
+    "category": "Seminar",
+    "date": "2026-11-28",
+    "location": "Seminar Hall"
+  },
+  {
+    "id": 10,
+    "title": "HTML and CSS Workshop",
+    "category": "Workshop",
+    "date": "2026-12-01",
+    "location": "Lab 1"
+  },
+  {
+    "id": 11,
+    "title": "Debugging Contest",
+    "category": "Competition",
+    "date": "2026-12-03",
+    "location": "Main Hall"
+  },
+  {
+    "id": 12,
+    "title": "Data Science Talk",
+    "category": "Seminar",
+    "date": "2026-12-05",
+    "location": "Room 103"
+  },
+  {
+    "id": 13,
+    "title": "Python Workshop",
+    "category": "Workshop",
+    "date": "2026-12-08",
+    "location": "Computer Lab"
+  },
+  {
+    "id": 14,
+    "title": "Web Design Contest",
+    "category": "Competition",
+    "date": "2026-12-10",
+    "location": "Auditorium"
+  },
+  {
+    "id": 15,
+    "title": "Technology Career Talk",
+    "category": "Seminar",
+    "date": "2026-12-12",
+    "location": "Seminar Hall"
+  }
+]

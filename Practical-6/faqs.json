@@ -1,0 +1,18 @@
+
+[
+  {"id":1,"question":"How do I log in?","answer":"Enter your student ID and password."},
+  {"id":2,"question":"How do I register?","answer":"Complete the registration form."},
+  {"id":3,"question":"Where can I see courses?","answer":"Open the courses page."},
+  {"id":4,"question":"How can I check attendance?","answer":"Open the attendance page."},
+  {"id":5,"question":"Where are results shown?","answer":"Visit the results page."},
+  {"id":6,"question":"How do I update my profile?","answer":"Open your profile page."},
+  {"id":7,"question":"What if I forget my password?","answer":"Contact your portal administrator."},
+  {"id":8,"question":"How can I contact support?","answer":"Use the contact page."},
+  {"id":9,"question":"Can I search FAQs?","answer":"Yes, use the search box if available."},
+  {"id":10,"question":"How do I find events?","answer":"Open the events page."},
+  {"id":11,"question":"Can I filter students?","answer":"Use the available course or year filters."},
+  {"id":12,"question":"What is pagination?","answer":"It displays records across multiple pages."},
+  {"id":13,"question":"What is JSON?","answer":"JSON is a text format for structured data."},
+  {"id":14,"question":"What does Fetch API do?","answer":"It requests data from a resource."},
+  {"id":15,"question":"How do I report a problem?","answer":"Contact the portal administrator."}
+]

@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 6 - Fetch API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 25px;
+            background: #f3f6fa;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        .event {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>StudentHub - Events</h1>
+
+    <input type="text" id="search" placeholder="Search events...">
+
+    <select id="category">
+        <option value="">All Categories</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Competition">Competition</option>
+        <option value="Seminar">Seminar</option>
+    </select>
+
+    <select id="sort">
+        <option value="asc">Date: Oldest first</option>
+        <option value="desc">Date: Newest first</option>
+    </select>
+
+    <p id="status" role="status" aria-live="polite">Loading events...</p>
+    <div id="events"></div>
+
+    <button id="previous">Previous</button>
+    <span id="page">Page 1</span>
+    <button id="next">Next</button>
+
+    <script>
+        const eventsContainer = document.getElementById("events");
+        const search = document.getElementById("search");
+        const category = document.getElementById("category");
+        const sort = document.getElementById("sort");
+        const status = document.getElementById("status");
+
+        let events = [];
+        let currentPage = 1;
+        const perPage = 5;
+
+        async function loadEvents() {
+    try {
+        status.textContent = "Loading events...";
+
+        const response = await fetch("events.json");
+
+        if (!response.ok) {
+            throw new Error("Could not load events.json");
+        }
+
+        events = await response.json();
+        status.textContent = "Events loaded successfully.";
+        renderEvents();
+
+    } catch (error) {
+        status.textContent =
+            "Unable to load events. Check your JSON file and Live Server.";
+        status.className = "error";
+    }
+}
+
+        function renderEvents() {
+            const query = search.value.toLowerCase();
+            const selectedCategory = category.value;
+
+            let filtered = events.filter(event =>
+                event.title.toLowerCase().includes(query) &&
+                (selectedCategory === "" ||
+                 event.category === selectedCategory)
+            );
+
+            filtered.sort((a, b) =>
+                sort.value === "asc"
+                    ? a.date.localeCompare(b.date)
+                    : b.date.localeCompare(a.date)
+            );
+
+            const totalPages = Math.max(1, Math.ceil(filtered.length / perPage));
+
+            if (currentPage > totalPages) currentPage = totalPages;
+
+            const start = (currentPage - 1) * perPage;
+            const visibleEvents = filtered.slice(start, start + perPage);
+
+            eventsContainer.replaceChildren();
+
+            if (filtered.length === 0) {
+                status.textContent = "No matching events found.";
+            } else {
+                status.textContent = filtered.length + " event(s) found.";
+            }
+
+            visibleEvents.forEach(event => {
+                const card = document.createElement("div");
+                card.className = "event";
+
+                const title = document.createElement("h2");
+                title.textContent = event.title;
+
+                const details = document.createElement("p");
+                details.textContent =
+                    event.category + " | " + event.date +
+                    " | " + event.location;
+
+                card.append(title, details);
+                eventsContainer.appendChild(card);
+            });
+
+            document.getElementById("page").textContent =
+                "Page " + currentPage + " of " + totalPages;
+
+            document.getElementById("previous").disabled = currentPage === 1;
+            document.getElementById("next").disabled =
+                currentPage === totalPages || filtered.length === 0;
+        }
+
+        search.addEventListener("input", () => {
+            currentPage = 1;
+            renderEvents();
+        });
+
+        category.addEventListener("change", () => {
+            currentPage = 1;
+            renderEvents();
+        });
+
+        sort.addEventListener("change", renderEvents);
+
+        document.getElementById("previous").addEventListener("click", () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderEvents();
+            }
+        });
+
+        document.getElementById("next").addEventListener("click", () => {
+            currentPage++;
+            renderEvents();
+        });
+
+        loadEvents();
+    </script>
+</body>
+</html>

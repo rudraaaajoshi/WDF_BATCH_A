@@ -1,0 +1,18 @@
+
+[
+  {"id":1,"name":"Aarav Patel","course":"IT","year":1,"city":"Ahmedabad"},
+  {"id":2,"name":"Diya Shah","course":"CSE","year":2,"city":"Surat"},
+  {"id":3,"name":"Krish Mehta","course":"IT","year":1,"city":"Vadodara"},
+  {"id":4,"name":"Anaya Desai","course":"CE","year":3,"city":"Ahmedabad"},
+  {"id":5,"name":"Vivaan Joshi","course":"IT","year":2,"city":"Rajkot"},
+  {"id":6,"name":"Myra Patel","course":"CSE","year":1,"city":"Surat"},
+  {"id":7,"name":"Reyansh Shah","course":"CE","year":4,"city":"Nadiad"},
+  {"id":8,"name":"Sara Mehta","course":"IT","year":3,"city":"Anand"},
+  {"id":9,"name":"Aditya Desai","course":"CSE","year":2,"city":"Rajkot"},
+  {"id":10,"name":"Ishita Joshi","course":"CE","year":1,"city":"Surat"},
+  {"id":11,"name":"Arjun Patel","course":"IT","year":4,"city":"Ahmedabad"},
+  {"id":12,"name":"Kiara Shah","course":"CSE","year":3,"city":"Vadodara"},
+  {"id":13,"name":"Dev Mehta","course":"CE","year":2,"city":"Anand"},
+  {"id":14,"name":"Pari Desai","course":"IT","year":1,"city":"Rajkot"},
+  {"id":15,"name":"Yash Joshi","course":"CSE","year":4,"city":"Nadiad"}
+]
