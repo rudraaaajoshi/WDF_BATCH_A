@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Courses - StudentHub Portal</title>
+   
+<link rel="stylesheet" href="script.css">
+</head>
+<body>
+
+  
+
+    <header>
+          <div align="left">
+        <img src="c:\Users\rudra\OneDrive\Pictures\charusat logo.jpg" width="90" height="90">
+    </div>
+
+    <h1 align="center">StudentHub Portal</h1>
+
+    <p align="center">Welcome to Student Information Portal</p>
+    <link rel="stylesheet" href="courses.css">
+
+
+</header>
+    
+
+    <hr>
+
+    <nav>
+        <a href="home.html">Home</a> 
+        <a href="about.html">About</a> 
+        <a href="login.html">Login</a> 
+        <a href="registration.html">Registration</a> 
+        <a href="profile.html">Profile</a> 
+        <a href="courses.html">Courses</a> 
+        <a href="attendance.html">Attendance</a> 
+        <a href="result.html">Results</a> 
+        <a href="contact.html">Contact</a> 
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <hr>
+
+   
+    <section>
+
+        <h2>Course Details</h2>
+
+        <p>
+            The following table shows the subjects offered in the current semester.
+        </p>
+
+        <!-- search and filter controls (Practical 6) -->
+        <input type="text" id="courseSearch" placeholder="Search by subject, code or faculty...">
+
+        <select id="semFilter">
+            <option value="all">All Semesters</option>
+        </select>
+
+        <p id="courseCount"></p>
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Subject Name</th>
+                    <th>Faculty</th>
+                    <th>Credits</th>
+                    <th>Semester</th>
+                </tr>
+            </thead>
+            <!-- rows are added here by JavaScript after fetching courses.json -->
+            <tbody id="courseBody">
+                <tr><td colspan="5">Loading courses...</td></tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+        <h2>Course Information</h2>
+
+        <ul>
+            <li>Each subject has theory and practical sessions.</li>
+            <li>Attendance of at least 75% is compulsory.</li>
+            <li>Assignments must be submitted before the deadline.</li>
+            <li>Internal and external examinations are conducted every semester.</li>
+        </ul>
+
+    </section>
+
+    
+<script src="script.js"></script>
+</body>
+</html>
+

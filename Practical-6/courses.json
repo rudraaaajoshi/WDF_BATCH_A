@@ -1,0 +1,12 @@
+[
+  { "code": "ITUE203", "subject": "Web Development", "faculty": "Prof. Sachin Patel", "credits": 4, "semester": 3 },
+  { "code": "ITUC201", "subject": "Fundamentals of Computer Networks", "faculty": "Prof. Jay Patel", "credits": 3, "semester": 3 },
+  { "code": "CSUC201", "subject": "Data Structures and Algorithms", "faculty": "Prof. P Patel", "credits": 4, "semester": 3 },
+  { "code": "CEUE203", "subject": "OOP", "faculty": "Prof. Vaibhav Matalia", "credits": 4, "semester": 3 },
+  { "code": "MSUD203", "subject": "Discrete Mathematics", "faculty": "Prof. Rajesh Savalia", "credits": 4, "semester": 3 },
+  { "code": "CSUC101", "subject": "Programming Fundamentals", "faculty": "Prof. Neha Shah", "credits": 4, "semester": 1 },
+  { "code": "MSUC102", "subject": "Engineering Mathematics", "faculty": "Prof. Amit Desai", "credits": 4, "semester": 1 },
+  { "code": "ITUC202", "subject": "Digital Electronics", "faculty": "Prof. Kiran Mehta", "credits": 3, "semester": 2 },
+  { "code": "CSUC301", "subject": "Database Management Systems", "faculty": "Prof. Hetal Joshi", "credits": 4, "semester": 4 },
+  { "code": "ITUC401", "subject": "Operating Systems", "faculty": "Prof. Ravi Trivedi", "credits": 4, "semester": 4 }
+]

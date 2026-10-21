@@ -1,0 +1,336 @@
+/* =========================================================
+   COMMON STYLES — shared across all pages for consistency
+   (Reset, Header, Navbar, Section shell, Buttons, Responsive)
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f2f6fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HEADER (same on every page) ===== */
+header {
+    width: 100%;
+    height: 110px;
+    min-height: 110px;
+    max-height: 110px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e5aa8, #164579);
+    color: white;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+header img {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    border-radius: 8px;
+    background-color: white;
+    padding: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 28px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    margin: 4px 0 0;
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* ===== NAVBAR (same on every page) ===== */
+nav {
+    width: 100%;
+    height: 65px;
+    min-height: 65px;
+    max-height: 65px;
+    margin: 0;
+    padding: 0;
+    background-color: #164579;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+nav a:hover {
+    background-color: #3d8bd9;
+    transform: translateY(-1px);
+}
+
+nav a:active {
+    transform: translateY(0);
+}
+
+nav a.active {
+    background-color: #3d8bd9;
+    font-weight: bold;
+}
+
+/* ===== SECTION SHELL (base — pages tweak width as needed) ===== */
+section {
+    background-color: white;
+    width: 85%;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease;
+}
+
+section h2 {
+    color: #1e5aa8;
+    border-bottom: 2px solid #1e5aa8;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+/* ===== SHARED TABLE BASE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #1e5aa8;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+tr {
+    transition: background-color 0.15s ease;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f6fc;
+}
+
+tr:hover {
+    background-color: #dcecff;
+}
+
+/* ===== SHARED FORM ELEMENTS ===== */
+label {
+    color: #164579;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1e5aa8;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 90, 168, 0.15);
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 15px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+input[type="submit"] {
+    background-color: #1e5aa8;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #777;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #164579;
+}
+
+input[type="reset"]:hover {
+    background-color: #555;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+    transform: scale(0.98);
+}
+
+/* ===== LISTS ===== */
+ul {
+    line-height: 2;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* ===== HR ===== */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* ===== FOOTER (optional, in case pages use one) ===== */
+footer {
+    background-color: #164579;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 22px;
+        padding-top: 24px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+        top: 12px;
+    }
+
+    nav {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 8px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    section {
+        width: 94%;
+        padding: 16px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        padding: 8px 4px;
+    }
+
+    tr {
+        margin-bottom: 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+}
+
+/* =========================================================
+   PAGE-SPECIFIC: Home Page
+   ========================================================= */
+
+section {
+    width: 80%;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Features List — card style, no bullets */
+ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: normal;
+}
+
+li {
+    background-color: #eef5ff;
+    margin: 10px 0;
+    padding: 14px 16px;
+    border-left: 5px solid #1e5aa8;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+li:hover {
+    background-color: #dcecff;
+    transform: translateX(3px);
+}
